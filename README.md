@@ -1,2 +1,1 @@
-pluralize-me
-============
+Pluralize a word
