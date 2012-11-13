@@ -1,0 +1,20 @@
+<h1>Pluralize Me!</h1>
+
+<p>
+  Find out how ruby will pluralize a word :)
+</p>
+
+<div class="error" style="color:red;font-weight:bold;">
+</div>
+
+<div class="input">
+  <%= form_tag root_path, remote: true, id: "pluralize-form" do %>
+    <%= text_field_tag "pluralize_box", id: "pluralize-box" %>
+    <%= submit_tag "Pluralize Me!" %>
+  <% end %>
+</div>
+
+<br/>
+
+<div id="output">
+</div>

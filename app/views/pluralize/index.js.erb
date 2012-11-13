@@ -1,0 +1,7 @@
+<% if params[:pluralize_box] == "" %>
+  $(".error").html("You did not enter anything!");
+  $("#output").html("");
+<% else %>
+  $("#output").html("The pluralized form of <%= params[:pluralize_box] %> is <b><%= params[:pluralize_box].pluralize %></b>");
+  $(".error").html("");
+<% end %>
